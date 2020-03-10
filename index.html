@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mini_logos/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/index.css">
+    <script async src="script/index.js"></script>
+    <script async>
+        window.onresize = function() {
+            sliderSize();
+            menuCheck();
+        }
+        window.onload = function() {
+            sliderSize();
+            menuCheck();
+        }
+    </script>
+    <title>Yourcompanyname</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            YOURCOMPANYNAME
+        </div>
+        <div class="main-menu">
+            <div class="menu-button" onclick="openMenu()">МЕНЮ</div>
+            <ul class="menu-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTMONIALS</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </div>
+
+        <div class="header-back">
+            <img src="img/header-back.jpg" alt="backgroud">
+            <div class="title-block">
+                <div class="white">WELCOME TO</div>
+                <div class="orange">YOURCOMPANYNAME</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="ourteam-wrapper">
+        <h2>OUR TEAM LEADERS</h2>
+        <div class="underline"></div>
+        <div class="ourteam-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        </div>
+        <div class="ourteam-block">
+            <div class="ourteam-item">
+                <img src="img/portrait.jpg" alt="portrait1">
+                <div class="ourteam-name">
+                    Hugo Silva
+                </div>
+                <div class="ourteam-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                </div>
+            </div>
+
+            <div class="ourteam-item">
+                <img src="img/portrait.jpg" alt="portrait2">
+                <div class="ourteam-name">
+                    Imanol Arias
+                </div>
+                <div class="ourteam-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                </div>
+            </div>
+
+            <div class="ourteam-item">
+                <img src="img/portrait.jpg" alt="portrait3">
+                <div class="ourteam-name">
+                    Javier Bardem
+                </div>
+                <div class="ourteam-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-wrapper">
+        <div class="info-block">
+            <div class="info-two-items">
+                <div class="info-item">
+                    <div class="info-number">2500</div>
+                    <div class="info-text">HAPPY CLIENTS</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">300</div>
+                    <div class="info-text">FULL NOTEBOOKS</div>
+                </div>
+            </div>
+            <div class="info-two-items">
+
+                <div class="info-item">
+                    <div class="info-number">120</div>
+                    <div class="info-text">TEAMMATES</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">30</div>
+                    <div class="info-text">STORES</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="afterinfo-background">
+        <img src="img/background.jpg" alt="background">
+    </div>
+
+    <form name="contact-form" method="post" onsubmit="checkForm(event)">
+        <h2>CONTACT US</h2>
+        <div class="form-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</div>
+
+        <div class="form-item">
+            <input type="text" name="name" placeholder="Name" id="form-name">
+            <i class="fas fa-chevron-down"></i>
+            <select name="category" id="form-category">
+                <option value="" disabled selected hidden>Category</option>
+                <option value="Category1">Category1</option>
+                <option value="Category2">Category2</option>
+                <option value="Category3">Category3</option>
+                <option value="Category4">Category4</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <input type="text" name="phone" placeholder="Phone" id="form-phone">
+            <i class="fas fa-chevron-down"></i>
+            <select name="city" id="form-city">
+                <option value="" disabled selected hidden>City</option>
+                <option value="City1">City1</option>
+                <option value="City2">City2</option>
+                <option value="City3">City3</option>
+                <option value="City4">City4</option>
+            </select>
+        </div>
+
+        <input type="email" name="email" placeholder="E-mail" id="form-email">
+
+        <textarea name="message" id="" placeholder="Message"></textarea>
+
+        <input type="submit" value="Contact us">
+    </form>
+
+    <div class="aboutus-wrapper">
+
+        <div class="aboutus-image">
+            <img src="img/aboutus.jpg" alt="">
+        </div>
+
+        <div class="aboutus-block">
+            <h3>ABOUT US</h3>
+            <div class="aboutus-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</div>
+
+            <div class="aboutus-items">
+
+                <div class="aboutus-item">
+                    <div class="aboutus-item-image">
+                        <img src="img/round.jpg" alt="">
+                    </div>
+                    <div class="aboutus-item-dash"></div>
+                    <a href="#">FRIENDLY TEAM</a>
+                </div>
+
+                <div class="aboutus-item">
+                    <div class="aboutus-item-image">
+                        <img src="img/round.jpg" alt="">
+                    </div>
+                    <div class="aboutus-item-dash"></div>
+                    <a href="#">INVOLVED</a>
+                </div>
+
+                <div class="aboutus-item">
+                    <div class="aboutus-item-image">
+                        <img src="img/round.jpg" alt="">
+                    </div>
+                    <div class="aboutus-item-dash"></div>
+                    <a href="#">24/7 ASSISTANCE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-wrapper">
+        <h2>OUR GALLERY</h2>
+        <div class="gallery-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conze-
+        </div>
+    </div>
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="first" first></div>
+            <div class="second"></div>
+            <div class="third" id="three"></div>
+            <div class="fourth" id="two"></div>
+            <div class="fifth" last id="one"></div>
+        </div>
+        <div class="slider-controls">
+            <div class="left-control" onclick="slider('left')">
+                <div class="dash1"></div>
+                <div class="dash2"></div>
+            </div>
+            <div class="right-control" onclick="slider('right')">
+                <div class="dash1"></div>
+                <div class="dash2"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-block-one">
+            <div class="footer-two-items">
+                <div class="footer-item">
+                    <a href="" class="upper">CONTENT</a>
+                    <a href="">Lorem ipsum</a>
+                    <a href="">Dolor sit</a>
+                </div>
+
+                <div class="footer-item">
+                    <a href="" class="upper">INFORMATION</a>
+                    <a href="">Lorem ipsum</a>
+                    <a href="">Onsectetur adipisicing</a>
+                </div>
+            </div>
+            <div class="footer-two-items">
+                <div class="footer-item">
+                    <a href="" class="upper">LEGAL</a>
+                    <a href="">Adipisicing elit</a>
+                    <a href="">Sed do eiusmod</a>
+                    <a href="">Tempor incidi</a>
+                </div>
+
+                <div class="footer-item">
+                    <a href="" class="upper">HELP</a>
+                    <a href="">Lorem ipsum</a>
+                    <a href="">Onsectetur adipisicing</a>
+                </div>
+            </div>
+            <div class="footer-item last-block">
+                <div class="contacts">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="">3-6000-0000-6000-000-0000</div>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="">67700 Dangenham St England, GB</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-block-two">
+            <div class="footer-text">
+                Copyright <i class="far fa-copyright"></i> 2019. Your companyname All rights reserved
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://uk-ua.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
